@@ -678,6 +678,82 @@ p:not(:last-child) {
 }
 
 /* navber responsive end  */
+/* footer responsive start   */
 
+@media screen and (max-width: 320px) {
+    .container {
+        margin-inline: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .about-content-container {
+        gap: 2rem; /* Reduce gap on smaller screens */
+    }
+
+    .blog-container,
+    .mission-container,
+    .service-container {
+        gap: 2rem; /* Reduce gap on smaller screens */
+    }
+
+    .blog-card,
+    .service-card {
+        width: 95%; /* Make cards take up more width */
+        margin-top: 10px;
+    }
+
+    .blog-card img,
+    .service-card img {
+        height: 30vh; /* Adjust image height */
+    }
+
+    .service-text {
+        width: 90%; /* Adjust text width */
+    }
+
+    .service-description {
+        width: 90%; /* Adjust description width */
+    }
+
+    .footer__container {
+        padding-block: 2rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-h1 {
+        font: 1em sans-serif;
+    }
+
+    .navbar-logo {
+        width: 30px;
+        height: 30px;
+        margin-left: 0.5rem;
+    }
+
+    .footer__content {
+        row-gap: 1rem; /* Further reduce gap */
+    }
+
+    .footer__links {
+        gap: 1rem; /* Reduce gap between links */
+    }
+
+    .footer__social {
+        column-gap: 0.5rem; /* Reduce gap between social icons */
+    }
+}
+
+/* footer responsive end 
 /* responsive End  */
 /* \end{code}  */
